@@ -74,7 +74,6 @@ const idiomButton = document.getElementById('idiom-button');
 
 
 
-
 const english_information = {
     profession: "Information Systems Engineering student",
     download: "Download CV <i class="+"ri-download-line"+"></i>", 
@@ -119,13 +118,3 @@ console.log(color);
 
 });
 
-
-/*document.getElementById('profession').innerHTML = english_information.profession;
-        document.getElementById('cv-button').innerHTML = english_information.download;
-        document.getElementById('projects-button').innerHTML = english_information.projects;
-        document.getElementById('skills-button').innerHTML = english_information.skills;
-        document.getElementById('experiencie-button').innerHTML = english_information.experiencie;
-        document.getElementById('certifications-button').innerHTML = english_information.certifications;
-        document.querySelector(".change-idiom").style.color = "var(--first-color)";
-        document.body.classList.toggle(spanishIdiom)
-        */
