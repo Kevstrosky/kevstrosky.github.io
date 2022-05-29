@@ -75,20 +75,46 @@ const idiomButton = document.getElementById('idiom-button');
 
 
 const english_information = {
+    //Header
     profession: "Information Systems Engineering student",
+    //Download button
     download: "Download CV <i class="+"ri-download-line"+"></i>", 
+    //Filter tabs
     projects:  "Projects",
     skills: "Skills",
     experiencie: "Experience",
-    certifications: "Certifications"
+    certifications: "Certifications",
+    //Skills frontend
+    skill_1_level: "Intermediate", //HTML
+    skill_2_level: "Beginner", //Javascript
+    skill_3_level: "First steps", //Tailwindcss
+    skill_4_level: "Intermediate", //CSS
+    skill_5_level: "First steps", //Bootstrap
+    //Skills backend
+    skill_6_level: "Intermediate", //MySQL
+    skill_7_level: "Beginner", //Python
+
 }
 const spanish_information = {
+    //Header
     profession: "Estudiante de Ingeniería en Sistemas de Información",
+    //Download button
     download: "Descargar CV <i class="+"ri-download-line"+"></i>", 
+    //Filter tabs
     projects:  "Proyectos",
     skills: "Tecnologías",
     experiencie: "Experiencia",
-    certifications: "Certificaciones"
+    certifications: "Certificaciones",
+    //Skills frontend
+    skill_1_level: "Intermediario", //HTML
+    skill_2_level: "Principiante", //Javascript
+    skill_3_level: "Primeros pasos", //Tailwindcss
+    skill_4_level: "Intermediario", //CSS
+    skill_5_level: "Primeros pasos", //Bootstrap
+    //Skills backend
+    skill_6_level: "Intermediario", //MySQL
+    skill_7_level: "Principiante", //Python
+
 }
 
 idiomButton.addEventListener('click',() => {
@@ -104,6 +130,18 @@ console.log(color);
         document.getElementById('skills-button').innerHTML = english_information.skills;
         document.getElementById('experiencie-button').innerHTML = english_information.experiencie;
         document.getElementById('certifications-button').innerHTML = english_information.certifications;
+
+        document.getElementById('skill_1_level').innerHTML = english_information.skill_1_level;
+        document.getElementById('skill_2_level').innerHTML = english_information.skill_2_level;
+        document.getElementById('skill_3_level').innerHTML = english_information.skill_3_level;
+        document.getElementById('skill_4_level').innerHTML = english_information.skill_4_level;
+        document.getElementById('skill_5_level').innerHTML = english_information.skill_5_level;
+        /*
+        for(let i = 1; i <= 1; i++){
+            const {skill_1_level} = english_information;
+            document.getElementById('skill_'+i+'_level').innerHTML = english_information;
+        */
+
     }
 
     if(color == "rgb(66, 165, 245)"){
