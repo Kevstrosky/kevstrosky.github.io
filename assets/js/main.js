@@ -82,7 +82,7 @@ const english_information = {
     //Filter tabs
     projects:  "Projects",
     skills: "Skills",
-    experiencie: "Experience",
+    experience: "Experience",
     certifications: "Certifications",
     //Skills title
     skill_1_title: "Frontend development",
@@ -109,7 +109,7 @@ const spanish_information = {
     //Filter tabs
     projects:  "Proyectos",
     skills: "Tecnologías",
-    experiencie: "Experiencia",
+    experience: "Experiencia",
     certifications: "Certificaciones",
      //Skills title
     skill_1_title: "Desarrollo frontend",
@@ -134,17 +134,8 @@ const style = getComputedStyle(list);
 const color = style.color;
 console.log(color);
     if(color == "rgb(34, 39, 43)" || color == "rgb(241, 242, 244)"){
-        document.querySelector(".change-idiom").style.color = "var(--first-color)";
-        document.getElementById('profession').innerHTML = english_information.profession;
-        document.getElementById('cv-button').innerHTML = english_information.download;
-        document.getElementById('projects-button').innerHTML = english_information.projects;
-        document.getElementById('skills-button').innerHTML = english_information.skills;
-        document.getElementById('experiencie-button').innerHTML = english_information.experiencie;
-        document.getElementById('certifications-button').innerHTML = english_information.certifications;
-
         document.getElementById('skill_1_title').innerHTML = english_information.skill_1_title;
         document.getElementById('skill_2_title').innerHTML = english_information.skill_2_title;
-
         document.getElementById('skill_1_level').innerHTML = english_information.skill_1_level;
         document.getElementById('skill_2_level').innerHTML = english_information.skill_2_level;
         document.getElementById('skill_3_level').innerHTML = english_information.skill_3_level;
@@ -152,8 +143,14 @@ console.log(color);
         document.getElementById('skill_5_level').innerHTML = english_information.skill_5_level;
         document.getElementById('skill_6_level').innerHTML = english_information.skill_6_level;
         document.getElementById('skill_7_level').innerHTML = english_information.skill_7_level;
-
         document.getElementById('footer').innerHTML = english_information.footer;
+        document.querySelector(".change-idiom").style.color = "var(--first-color)";
+        document.getElementById('profession').innerHTML = english_information.profession;
+        document.getElementById('cv-button').innerHTML = english_information.download;
+        document.getElementById('projects-button').innerHTML = english_information.projects;
+        document.getElementById('skills-button').innerHTML = english_information.skills;
+        document.getElementById('experience-button').innerHTML = english_information.experience;
+        document.getElementById('certifications-button').innerHTML = english_information.certifications;
 
 
         /*
@@ -166,13 +163,6 @@ console.log(color);
 
     if(color == "rgb(66, 165, 245)"){
         document.querySelector(".change-idiom").style.color = "var(--title-color)";
-        document.getElementById('profession').innerHTML = spanish_information.profession;
-        document.getElementById('cv-button').innerHTML = spanish_information.download;
-        document.getElementById('projects-button').innerHTML = spanish_information.projects;
-        document.getElementById('skills-button').innerHTML = spanish_information.skills;
-        document.getElementById('experiencie-button').innerHTML = spanish_information.experiencie;
-        document.getElementById('certifications-button').innerHTML = spanish_information.certifications;
-
         document.getElementById('skill_1_title').innerHTML = spanish_information.skill_1_title;
         document.getElementById('skill_2_title').innerHTML = spanish_information.skill_2_title;
 
@@ -185,6 +175,13 @@ console.log(color);
         document.getElementById('skill_7_level').innerHTML = spanish_information.skill_7_level;
 
         document.getElementById('footer').innerHTML = spanish_information.footer;
+        document.getElementById('profession').innerHTML = spanish_information.profession;
+        document.getElementById('cv-button').innerHTML = spanish_information.download;
+        document.getElementById('projects-button').innerHTML = spanish_information.projects;
+        document.getElementById('skills-button').innerHTML = spanish_information.skills;
+        document.getElementById('experience-button').innerHTML = spanish_information.experience;
+        document.getElementById('certifications-button').innerHTML = spanish_information.certifications;
+
     }
 
 });
