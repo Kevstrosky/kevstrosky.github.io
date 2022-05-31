@@ -27,6 +27,10 @@
         grid-template-columns: 332px;
         justify-content: center;
     }
+    .experience__content{
+        grid-template-columns: 332px;
+        justify-content: center;
+    }
     .filters__content{
         width: 332px;
         margin: 3rem auto;
@@ -35,7 +39,8 @@
 
 @media screen and (min-width: 776px){
     .projects__content,
-    .skills__content{
+    .skills__content,
+    .experience__content{
         grid-template-columns: repeat(2, 332px);
     }
     .skills__content{
@@ -88,6 +93,14 @@
     }
 
     .projects{
+        &__content{
+            gap: 2rem 3rem;
+        }
+        &__modal{
+            padding: 1.5rem;
+        }
+    }
+    .experience{
         &__content{
             gap: 2rem 3rem;
         }
