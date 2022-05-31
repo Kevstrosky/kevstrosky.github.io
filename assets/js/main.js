@@ -84,6 +84,9 @@ const english_information = {
     skills: "Skills",
     experiencie: "Experience",
     certifications: "Certifications",
+    //Skills title
+    skill_1_title: "Frontend development",
+    skill_2_title: "Backend development",
     //Skills frontend
     skill_1_level: "Intermediate", //HTML
     skill_2_level: "Beginner", //Javascript
@@ -93,6 +96,9 @@ const english_information = {
     //Skills backend
     skill_6_level: "Intermediate", //MySQL
     skill_7_level: "Beginner", //Python
+    //Footer
+    footer: "Site based on the original design of Bedimcode. Edited and modified by Kevstrosky"
+
 
 }
 const spanish_information = {
@@ -105,6 +111,9 @@ const spanish_information = {
     skills: "Tecnologías",
     experiencie: "Experiencia",
     certifications: "Certificaciones",
+     //Skills title
+    skill_1_title: "Desarrollo frontend",
+    skill_2_title: "Desarrollo backend",
     //Skills frontend
     skill_1_level: "Intermediario", //HTML
     skill_2_level: "Principiante", //Javascript
@@ -114,6 +123,8 @@ const spanish_information = {
     //Skills backend
     skill_6_level: "Intermediario", //MySQL
     skill_7_level: "Principiante", //Python
+    //Footer
+    footer: "Sitio basado en el diseño original de Bedimcode. Editado y modificado por Kevstrosky."
 
 }
 
@@ -131,11 +142,20 @@ console.log(color);
         document.getElementById('experiencie-button').innerHTML = english_information.experiencie;
         document.getElementById('certifications-button').innerHTML = english_information.certifications;
 
+        document.getElementById('skill_1_title').innerHTML = english_information.skill_1_title;
+        document.getElementById('skill_2_title').innerHTML = english_information.skill_2_title;
+
         document.getElementById('skill_1_level').innerHTML = english_information.skill_1_level;
         document.getElementById('skill_2_level').innerHTML = english_information.skill_2_level;
         document.getElementById('skill_3_level').innerHTML = english_information.skill_3_level;
         document.getElementById('skill_4_level').innerHTML = english_information.skill_4_level;
         document.getElementById('skill_5_level').innerHTML = english_information.skill_5_level;
+        document.getElementById('skill_6_level').innerHTML = english_information.skill_6_level;
+        document.getElementById('skill_7_level').innerHTML = english_information.skill_7_level;
+
+        document.getElementById('footer').innerHTML = english_information.footer;
+
+
         /*
         for(let i = 1; i <= 1; i++){
             const {skill_1_level} = english_information;
@@ -152,6 +172,19 @@ console.log(color);
         document.getElementById('skills-button').innerHTML = spanish_information.skills;
         document.getElementById('experiencie-button').innerHTML = spanish_information.experiencie;
         document.getElementById('certifications-button').innerHTML = spanish_information.certifications;
+
+        document.getElementById('skill_1_title').innerHTML = spanish_information.skill_1_title;
+        document.getElementById('skill_2_title').innerHTML = spanish_information.skill_2_title;
+
+        document.getElementById('skill_1_level').innerHTML = spanish_information.skill_1_level;
+        document.getElementById('skill_2_level').innerHTML = spanish_information.skill_2_level;
+        document.getElementById('skill_3_level').innerHTML = spanish_information.skill_3_level;
+        document.getElementById('skill_4_level').innerHTML = spanish_information.skill_4_level;
+        document.getElementById('skill_5_level').innerHTML = spanish_information.skill_5_level;
+        document.getElementById('skill_6_level').innerHTML = spanish_information.skill_6_level;
+        document.getElementById('skill_7_level').innerHTML = spanish_information.skill_7_level;
+
+        document.getElementById('footer').innerHTML = spanish_information.footer;
     }
 
 });
