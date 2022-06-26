@@ -8,3 +8,33 @@
 @import 'components/footer';
 @import 'components/scroll';
 @import 'components/breakpoints';
+
+.notification{
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left:50%;
+    transform: translate(-50%);
+    background-color: black;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    display: flex;
+    gap:1rem;
+    &-show{
+      animation: warning 400ms ease-in-out forwards;
+      display:flex;
+    }
+  }
+  @keyframes warning{
+    0%{
+      opacity:0;
+      top:0;
+    }
+    5%{
+      opacity:0;
+    }
+    100%{
+      opacity:1;
+      top: 2rem;
+    }
+  }

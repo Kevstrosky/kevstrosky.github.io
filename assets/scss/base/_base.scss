@@ -26,3 +26,20 @@ img{
     max-width: 100%;
     height: auto;
 }
+.notification{
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left:50%;
+    transform: translate(-50%);
+    background-color: black;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    display: flex;
+    gap:1rem;
+    &-show{
+      animation: warning 400ms ease-in-out
+      forwards;
+      display:flex;
+    }
+  }

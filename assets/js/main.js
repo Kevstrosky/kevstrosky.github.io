@@ -125,6 +125,15 @@ console.log(color);
             document.getElementById(i).innerHTML = english_information[i];
         }
 
+        $('.notification').removeClass("hideon");
+        $('.notification').removeClass("hide");
+        $('.notification').addClass("show");
+        setTimeout(function(){
+        $('.notification').removeClass("show");
+        $('.notification').addClass("hide");
+        },2000);
+
+
     }
 
     if(color == "rgb(66, 165, 245)"){
@@ -133,6 +142,16 @@ console.log(color);
         for(let i = 1; i <= Object.keys(spanish_information).length; i++){
             document.getElementById(i).innerHTML = spanish_information[i];
         }
+        $('.s-notification').removeClass("hideon");
+        $('.s-notification').removeClass("hide");
+        $('.s-notification').addClass("show");
+        setTimeout(function(){
+        $('.s-notification').removeClass("show");
+        $('.s-notification').addClass("hide");
+        },2000);
+
+
+     
     }
 
 });

@@ -33,6 +33,87 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 }
+.notification{
+  color: #fff;
+  top: 75px;
+  max-width: 25rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  background-color: var(--first-color);
+  border-radius: 0.2rem;
+  overflow: hidden;
+  display: grid;
+  gap:1rem;
+  z-index:99;
+}
+
+.notification.show{
+  animation: show_slide 2s ease forwards;
+}
+@keyframes show_slide {
+  0%{
+    transform: translateY(100%);
+  }
+  40%{
+    transform: translateY(-10%);
+  }
+  80%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+.notification.hideon{
+  display: none;
+}
+.notification.hide{
+  animation: hide_slide 1s ease forwards;
+}
+@keyframes hide_slide {
+  from { opacity: 1; }
+    to { opacity: 0; }
+}
+.s-notification{
+  color: #fff;
+  top: 75px;
+  max-width: 25rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  position: absolute;
+  background-color: var(--first-color);
+  border-radius: 0.2rem;
+  overflow: hidden;
+  display: grid;
+  gap:1rem;
+  z-index:99;
+}
+
+.s-notification.show{
+  animation: show_slide 2s ease forwards;
+}
+.s-notification.hideon{
+  display: none;
+}
+.s-notification.hide{
+  animation: hide_slide 1s ease forwards;
+}
+
 
 @media screen and (min-width: 968px) {
   :root {
