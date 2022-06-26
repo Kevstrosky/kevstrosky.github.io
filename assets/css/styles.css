@@ -593,12 +593,18 @@ body.dark-theme {
   }
   .profile__buttons {
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 1rem
+    
   }
+
 
   .skills__box {
     column-gap: 1rem;
   }
+  .filters__button {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;  
+}
   
 }
 
@@ -618,6 +624,10 @@ body.dark-theme {
     margin: 3rem auto;
     
   }
+  .filters__button {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;  
+}
   
 }
 
@@ -632,6 +642,10 @@ body.dark-theme {
     justify-content: center;
     column-gap: 3rem;
   }
+  .filters__button {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;  
+}
 }
 
 /* For large devices */
