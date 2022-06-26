@@ -128,6 +128,8 @@ console.log(color);
         $('.notification').removeClass("hideon");
         $('.notification').removeClass("hide");
         $('.notification').addClass("show");
+        $('.s-notification').removeClass("show");
+        $('.s-notification').addClass("hide");
         setTimeout(function(){
         $('.notification').removeClass("show");
         $('.notification').addClass("hide");
@@ -145,6 +147,8 @@ console.log(color);
         $('.s-notification').removeClass("hideon");
         $('.s-notification').removeClass("hide");
         $('.s-notification').addClass("show");
+        $('.notification').removeClass("show");
+        $('.notification').addClass("hide");
         setTimeout(function(){
         $('.s-notification').removeClass("show");
         $('.s-notification').addClass("hide");
