@@ -400,6 +400,8 @@ body.dark-theme {
   border: none;
   outline: none;
   padding: 0.2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   color: var(--title-color);
   font-size: 0.7rem;
   font-family: var(--body-font);
