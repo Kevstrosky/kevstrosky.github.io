@@ -88,7 +88,9 @@ const english_information = {
     14: "First steps", 
     15: "Intermediate", 
     16: "Beginner", 
-    17: "Site based on the original design of Bedimcode. Edited and modified by Kevstrosky"
+    17: "Site based on the original design of Bedimcode. Edited and modified by Kevstrosky",
+    18: "Project Manager"
+
 }
 
 const spanish_information = {
@@ -108,7 +110,8 @@ const spanish_information = {
     14: "Primeros pasos",
     15: "Intermediario", 
     16: "Principiante", 
-    17: "Sitio basado en el diseño original de Bedimcode. Editado y modificado por Kevstrosky."
+    17: "Sitio basado en el diseño original de Bedimcode. Editado y modificado por Kevstrosky.",
+    18: "Líder de proyecto"
 
 }
 
