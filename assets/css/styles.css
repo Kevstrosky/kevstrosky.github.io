@@ -56,11 +56,11 @@
 }
 
 .notification.show{
-  animation: show_slide 2s ease forwards;
+  animation: show_slide 1.5s ease forwards;
 }
 @keyframes show_slide {
   0%{
-    transform: translateY(100%);
+    transform: translateY(60%);
   }
   40%{
     transform: translateY(-10%);

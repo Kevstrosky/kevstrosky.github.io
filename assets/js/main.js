@@ -89,7 +89,7 @@ const english_information = {
     15: "Intermediate", 
     16: "Beginner", 
     17: "Site based on the original design of Bedimcode. Edited and modified by Kevstrosky",
-    18: "Project Manager"
+    18: "Project manager"
 
 }
 
