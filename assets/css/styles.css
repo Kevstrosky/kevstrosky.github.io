@@ -508,7 +508,7 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
 }
 
-/*=============== EXPERIENCIE ===============*/
+/*=============== EXPERIENCE ===============*/
 .experience__card {
   position: relative;
   overflow: hidden;
@@ -531,6 +531,30 @@ body.dark-theme {
 }
 
 .experience__button {
+  padding: .5rem;
+}
+
+/*=============== CERTIFICATIONS ===============*/
+.certifications__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.certifications__subtitle, 
+.certifications__title {
+  color: #fff;
+}
+
+.certifications__subtitle {
+  font-size: var(--smaller-font-size);
+}
+
+.certifications__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: .75rem;
+}
+
+.certifications__button {
   padding: .5rem;
 }
 
@@ -585,6 +609,10 @@ body.dark-theme {
     grid-template-columns: 50px;
     justify-content: center;
   }
+  .certifications__content{
+    grid-template-columns: 50px;
+    justify-content: center;
+  }
   .container {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -620,6 +648,10 @@ body.dark-theme {
     grid-template-columns: 600px;
     justify-content: center;
   }
+  .certifications__content{
+    grid-template-columns: 600px;
+    justify-content: center;
+  }
 
   .filters__content {
     width: 600px;
@@ -637,6 +669,9 @@ body.dark-theme {
   .projects__content,
   .skills__content,
   .experience__content {
+    grid-template-columns: repeat(2, 332px);
+  }
+  .certifications__content {
     grid-template-columns: repeat(2, 332px);
   }
 
@@ -708,10 +743,20 @@ body.dark-theme {
   .experience__content {
     gap: 2rem 3rem;
   }
+  .certifications__content {
+    grid-template-columns: repeat(2, 332px);
+  }
   .experience__modal {
     padding: 1.5rem;
   }
   .experience__content{
+    grid-template-columns: 38rem;
+    justify-content: center;
+  }
+  .certifications__modal {
+    padding: 1.5rem;
+  }
+  .certifications__content{
     grid-template-columns: 38rem;
     justify-content: center;
   }
