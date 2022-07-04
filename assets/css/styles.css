@@ -660,7 +660,7 @@ section .content{
   
 }
 #courses_tab:checked ~ section .content-2{
-  font-size: 90px;
+  font-size: 9px;
   padding-top: 4%;
 
   display: block;
