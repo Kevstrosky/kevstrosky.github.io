@@ -65,6 +65,7 @@ sr.reveal(`.profile__info-group`, {interval: 100, delay: 700})
 sr.reveal(`.profile__buttons`, {delay: 900})
 sr.reveal(`.filters__content`, {delay: 1000})
 sr.reveal(`.filters`, {delay: 1100})
+sr.reveal(`.footer__copy`, {delay: 1200})
 
 /*=============== KEVSTROSKY CHANGES ===============*/
 /*=============== CHANGING IDIOM ===============*/

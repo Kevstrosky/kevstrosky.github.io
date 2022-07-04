@@ -598,6 +598,78 @@ body.dark-theme {
   background-color: hsl(var(--hue), 8%, 44%);
 }
 
+.wrapper{
+  max-width: auto;
+  width: 100%;
+  border-radius: 5px;
+  
+}
+
+.wrapper nav{
+  position: relative;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper nav label{
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  color:var(--title-color);
+  font-size: 17px;
+  position: relative;
+  z-index: 1;
+}
+
+#courses_tab:checked ~ nav label.courses_tab{
+  color: var(--title-color);
+}
+#certifications_tab:checked ~ nav label.certifications_tab{
+  color: var(--title-color);
+}
+input[type="radio"]{
+  display: none;
+}
+.wrapper nav .slider{
+  position: absolute;
+  height: 10%;
+  width: 50%;
+  background: var(--first-color);;
+  border-radius: 5px;
+  z-index: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s ease;
+}
+#courses_tab:checked ~ nav .slider{
+  left: 50%;
+}
+section .content{
+  display: none;
+}
+
+#certifications_tab:checked ~ section .content-1{
+  font-size: 9px;
+  padding-top: 4%;
+  display: block;
+  
+}
+#courses_tab:checked ~ section .content-2{
+  font-size: 90px;
+  padding-top: 4%;
+
+  display: block;
+}
+section .content .title{
+  font-size: 50px;
+}
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 320px) {
@@ -609,10 +681,12 @@ body.dark-theme {
     grid-template-columns: 50px;
     justify-content: center;
   }
+
   .certifications__content{
-    grid-template-columns: 50px;
+    grid-template-columns: 250px;
     justify-content: center;
   }
+
   .container {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -627,7 +701,6 @@ body.dark-theme {
     
   }
 
-
   .skills__box {
     column-gap: 1rem;
   }
@@ -635,11 +708,13 @@ body.dark-theme {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;  
 }
+
   
 }
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
+
   .projects__content {
     grid-template-columns: 332px;
     justify-content: center;
@@ -648,13 +723,23 @@ body.dark-theme {
     grid-template-columns: 600px;
     justify-content: center;
   }
+  #certifications_tab:checked ~ section .content-1{
+    font-size: 9px;
+    padding-top: 4%;
+    
+  }
+  #courses_tab:checked ~ section .content-2{
+    font-size: 9px;
+    padding-top: 4%;
+  }
+
   .certifications__content{
-    grid-template-columns: 600px;
+    grid-template-columns: 500px;
     justify-content: center;
   }
 
   .filters__content {
-    width: 600px;
+    width: 500px;
     margin: 3rem auto;
     
   }
@@ -662,6 +747,9 @@ body.dark-theme {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;  
 }
+
+
+
   
 }
 
@@ -671,8 +759,9 @@ body.dark-theme {
   .experience__content {
     grid-template-columns: repeat(2, 332px);
   }
+  
   .certifications__content {
-    grid-template-columns: repeat(2, 332px);
+    grid-template-columns: repeat(2, 250px);
   }
 
   .skills__content {
@@ -682,6 +771,25 @@ body.dark-theme {
   .filters__button {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;  
+}
+.wrapper nav .slider{
+  width: 50%;
+}
+.wrapper nav{
+  width: 120%;
+}
+#certifications_tab:checked ~ section .content-1{
+  font-size: 9px;
+  padding-top: 10%;
+  width: 200%;
+  display: block;
+  
+}
+#courses_tab:checked ~ section .content-2{
+  font-size: 9px;
+  padding-top: 10%;
+  width: 200%;
+  display: block;
 }
 }
 
@@ -743,9 +851,7 @@ body.dark-theme {
   .experience__content {
     gap: 2rem 3rem;
   }
-  .certifications__content {
-    grid-template-columns: repeat(2, 332px);
-  }
+
   .experience__modal {
     padding: 1.5rem;
   }
@@ -756,9 +862,14 @@ body.dark-theme {
   .certifications__modal {
     padding: 1.5rem;
   }
-  .certifications__content{
-    grid-template-columns: 38rem;
-    justify-content: center;
+  .certifications__content {
+    grid-template-columns: repeat(2, 250px);
+  }
+  .wrapper nav .slider{
+    width: 50%;
+  }
+  .wrapper nav{
+    width: 120%;
   }
 
 
@@ -769,5 +880,18 @@ body.dark-theme {
 
   .footer__copy {
     margin: 4.5rem 0 2.5rem;
+  }
+  #certifications_tab:checked ~ section .content-1{
+    font-size: 9px;
+    padding-top: 10%;
+    width: 200%;
+    display: block;
+    
+  }
+  #courses_tab:checked ~ section .content-2{
+    font-size: 9px;
+    padding-top: 10%;
+    width: 200%;
+    display: block;
   }
 }
