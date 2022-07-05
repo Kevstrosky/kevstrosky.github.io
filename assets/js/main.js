@@ -65,7 +65,7 @@ sr.reveal(`.profile__info-group`, {interval: 100, delay: 700})
 sr.reveal(`.profile__buttons`, {delay: 900})
 sr.reveal(`.filters__content`, {delay: 1000})
 sr.reveal(`.filters`, {delay: 1100})
-sr.reveal(`.footer__copy`, {delay: 1200})
+sr.reveal(`.footer__copy`, {delay: 800})
 
 /*=============== KEVSTROSKY CHANGES ===============*/
 /*=============== CHANGING IDIOM ===============*/
@@ -115,6 +115,12 @@ const spanish_information = {
     18: "Líder de proyecto"
 
 }
+function copy() {
+    let copyText = document.getElementById("cert-id").innerText;
+
+    navigator.clipboard.writeText(copyText);
+    alert("Copied the text: " + copyText);
+  }
 
 
 idiomButton.addEventListener('click',() => {
