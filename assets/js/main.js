@@ -116,7 +116,8 @@ const english_information = {
     41: "Verify certificate <i class="+"ri-link-m"+"></i>",
     42: "Introduction to Web Development with HTML, CSS, JavaScript - IBM",
     43: "Verify certificate <i class="+"ri-link-m"+"></i>",
-    44: "Introduction to Web Development II (40h) - Google Actívate"
+    44: "Introduction to Web Development II (40h) - Google Actívate",
+    45: "A web application that allows teachers to make requests for laboratories, reactives and equipment for the practices carried out by students."
 
 
 
@@ -168,7 +169,8 @@ const spanish_information = {
     41: "Verificar certificado <i class="+"ri-link-m"+"></i>",
     42: "Introducción al desarrollo web con HTML, CSS, JavaScript - IBM",
     43: "Verificar certificado <i class="+"ri-link-m"+"></i>",
-    44: "Introducción al Desarrollo Web II (40h) - Google Actívate"
+    44: "Introducción al Desarrollo Web II (40h) - Google Actívate",
+    45: "Una aplicación web que permite a los maestros realizar solicitudes de laboratorios, reactivos y equipos para las prácticas que realizan los alumnos."
 
 
 
