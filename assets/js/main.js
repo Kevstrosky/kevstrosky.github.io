@@ -90,7 +90,37 @@ const english_information = {
     15: "Intermediate", 
     16: "Beginner", 
     17: "Site based on the original design of Bedimcode. Edited and modified by Kevstrosky",
-    18: "Project manager"
+    18: "Project Manager",
+    19: "University of Sonora",
+    20: "March 2022 - Present",
+    21: "I’m currently Project Manager of the project"+'" Digitization and automationof forms for internal laboratory procedures"'+ "for the Department ofChemical Biological Sciences.",
+    22: "A web application that allows teachers to make requests for laboratories, reactives and equipment for the practices carried out by students.",
+    23: "IT Specialist",
+    24: "June 2021 - Present",
+    25: "I provide information technology services and consultancies for companies and individuals. Such as repair of computer equipment like desktop computers, laptops and printers. Also in the installation of time attendance devices, servers, antennas and telephony. I provide advice and training to the users. I build desktop computers, from looking at component compatibility to getting the gear ready",
+    26: "Network Technician",
+    27: "January 2020 - January 2021",
+    28: "I developed within the company in the area of electronic security and telecommunications. Mainly in the implementation and configuration of the devices that are integrated in the different companies of the industrial and commercial sector. Devices such as video surveillance cameras, antennas and access controls.",
+    29: "I also worked in various telecommunications rooms of various companies, performing maintenance and structured cabling of these.",
+    30: "Tools",
+    31: "Beginner", 
+    32: "Intermediate", 
+    33: "Beginner",
+    34: "Web page",
+    35: "Web application",
+    36: "Sislab - in development",
+    37: "Certifications",
+    38: "Courses",
+    39: "Introduction to Web Development I (40h) - Google Actívate",
+    40: "Verify certificate <i class="+"ri-link-m"+"></i>",
+    41: "Verify certificate <i class="+"ri-link-m"+"></i>",
+    42: "Introduction to Web Development with HTML, CSS, JavaScript - IBM",
+    43: "Verify certificate <i class="+"ri-link-m"+"></i>",
+    44: "Introduction to Web Development II (40h) - Google Actívate"
+
+
+
+
 
 }
 
@@ -112,14 +142,44 @@ const spanish_information = {
     15: "Intermediario", 
     16: "Principiante", 
     17: "Sitio basado en el diseño original de Bedimcode. Editado y modificado por Kevstrosky.",
-    18: "Líder de proyecto"
+    18: "Líder de proyecto",
+    19: "Universidad de Sonora",
+    20: "Marzo 2022 - Actualidad",
+    21: "Actualmente soy líder del proyecto"+'" Digitalización y automatización de formularios para los procedimientos internos de los laboratorios "'+"del departamento de Ciencias Químico Biológicas.",
+    22: "Una aplicación web que permite a los maestros realizar solicitudes de laboratorios, reactivos y equipos para las prácticas que realizan los alumnos.",
+    23: "Técnico de TI",
+    24: "Junio 2021 - Actualidad",
+    25: "Presto servicios y asesorías de tecnologías de información para empresas y particulares. Tales como reparación de equipos de cómputo como computadoras de escritorio, laptops e impresoras. También en la instalación de checadores, servidores, antenas y telefonía. Brindo asesorías y capacitaciones. Construyo computadoras de escritorio, desde la búsqueda entre compatibilidad de los componentes hasta tener listo el equipo.",
+    26: "Técnico en redes",
+    27: "Enero de 2020 - Enero de 2021",
+    28: "Me desarrollé dentro de la empresa como técnico en seguridad electrónica y telecomunicaciones. La actividad principal que realizaba, era implementar, configurar y documentar la instalación de dispositivos electrónicos para empresas del sector industrial y comercial. Dispositivos tales como cámaras de videovigilancia, antenas y controles de acceso.",
+    29: "También estuve en el desarrollo de diversos cuartos de telecomunicaciones para empresas realizando labores como el mantenimiento y cableado estructurado de estos.",
+    30: "Herramientas",
+    31: "Principiante",
+    32: "Intermediario",
+    33: "Principiante",
+    34: "Página web",
+    35: "Aplicación web",
+    36: "Sislab - en desarrollo",
+    37: "Certificaciones",
+    38: "Cursos",
+    39: "Introducción al Desarrollo Web I (40h) - Google Actívate",
+    40: "Verificar certificado <i class="+"ri-link-m"+"></i>",
+    41: "Verificar certificado <i class="+"ri-link-m"+"></i>",
+    42: "Introducción al desarrollo web con HTML, CSS, JavaScript - IBM",
+    43: "Verificar certificado <i class="+"ri-link-m"+"></i>",
+    44: "Introducción al Desarrollo Web II (40h) - Google Actívate"
 
+
+
+    
 }
-function copy() {
-    let copyText = document.getElementById("cert-id").innerText;
-
+function copy(idcert) {
+    let certText = document.getElementById(idcert).innerText;
+    let arr = certText.split(" ");
+        let copyText = arr[arr.length-3]+" "+arr[arr.length-2]+" "+arr[arr.length-1];
     navigator.clipboard.writeText(copyText);
-    alert("Copied the text: " + copyText);
+    alert(copyText);
   }
 
 
@@ -147,6 +207,9 @@ console.log(color);
         $('.notification').addClass("hide");
         },2000);
 
+        $("#sislab").attr('src', 'assets/img/project2-EN.jpg');
+
+
 
     }
 
@@ -167,6 +230,9 @@ console.log(color);
         $('.s-notification').removeClass("show");
         $('.s-notification').addClass("hide");
         },2000);
+
+        $("#sislab").attr('src', 'assets/img/project2.jpg');
+
 
 
      

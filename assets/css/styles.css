@@ -701,7 +701,8 @@ section .content .title{
 
 .certification-id{
   left: 10px;
-  max-width: 15rem;
+  max-width: 13rem;
+
   padding-left: 10px ;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
@@ -711,12 +712,14 @@ section .content .title{
   transition: .3s;
 
 }
+
+
 .certification-id i{
-  margin: 0;
-  position: relative;
-  left: 5px;
+  left: 12px;
   top: 2px;
   bottom: 1px;
+  margin: 0;
+  position: relative;
   background-color: var(--first-color);
   color: #fff;
   padding: 10px;
@@ -724,11 +727,10 @@ section .content .title{
   color: fff;
   cursor:pointer;
   transition: .2s ease-in;
-  
 }
 .certification-id i:hover{
   transition: .2s ease-out;
-  box-shadow: 0 1px 24px hsla(var(--hue), var(--sat), var(--lig), 0.7);
+  box-shadow: 0 1px 24px hsla(var(--hue), var(--sat), var(--lig), 0.);
 }
 
 
@@ -772,6 +774,7 @@ section .content .title{
     padding-bottom: 0.75rem;  
 }
 
+
   
 }
 
@@ -809,6 +812,14 @@ section .content .title{
   .filters__button {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;  
+}
+.certification-id{
+  max-width: 13rem;
+}
+.certification-id i{
+  left: 12px;
+  top: 2px;
+  bottom: 1px;
 }
 
 
@@ -854,6 +865,15 @@ section .content .title{
   width: 200%;
   display: block;
 }
+.certification-id{
+  max-width: 13rem;
+}
+.certification-id i{
+  left: 12px;
+  top: 2px;
+  bottom: 1px;
+}
+
 }
 
 /* For large devices */
@@ -935,8 +955,6 @@ section .content .title{
     width: 120%;
   }
   
-
-
   .skills__title {
     font-size: var(--normal-font-size);
     margin-bottom: 2.5rem;
@@ -957,5 +975,13 @@ section .content .title{
     padding-top: 10%;
     width: 200%;
     display: block;
+  }
+  .certification-id{
+    max-width: 15rem;
+  }
+  .certification-id i{
+    left: 7px;
+    top: 2px;
+    bottom: 1px;
   }
 }
