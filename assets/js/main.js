@@ -202,7 +202,7 @@ console.log(color);
         for(let i = 1; i <= Object.keys(english_information).length; i++){
             document.getElementById(i).innerHTML = english_information[i];
         }
-        $("#3").attr('href', 'assets/pdf/Kevin Ochoa-CV-English.pdf');
+        $("#3").attr('href', 'assets/pdf/Kevin_Ochoa_Resume.pdf');
 
 
         $('.notification').removeClass("hideon");
@@ -227,7 +227,7 @@ console.log(color);
         for(let i = 1; i <= Object.keys(spanish_information).length; i++){
             document.getElementById(i).innerHTML = spanish_information[i];
         }
-        $("#3").attr('href', 'assets/pdf/Kevin Ochoa-CV-Español.pdf');
+        $("#3").attr('href', 'assets/pdf/Kevin_Ochoa_CV.pdf');
 
         $('.s-notification').removeClass("hideon");
         $('.s-notification').removeClass("hide");
