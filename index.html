@@ -1,400 +1,585 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<!--=============== Kevstrosky | Kevin Ochoa Guerrero ===============-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favi.png" type="image/x-icon">
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--=============== FONT AWESOME ===============-->
+    <script src="https://kit.fontawesome.com/c7cd73b7a7.js" crossorigin="anonymous"></script>
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous">
+        </script>
+    <!--=============== Page title ===============-->
+    <title id="1">Kevin Ochoa - Portafolio</title>
+</head>
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="assets/img/favi.png" type="image/x-icon">
-        
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="profile container">
 
-        <!--=============== FONT AWESOME ===============-->
+        <!-- Theme button -->
+        <i class="ri-english-input change-idiom" id="idiom-button"></i>
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-        <script src="https://kit.fontawesome.com/c7cd73b7a7.js" crossorigin="anonymous"></script>
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <script
-                src="https://code.jquery.com/jquery-3.6.0.js"
-                integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-                crossorigin="anonymous"></script>
-
-        <title id="1">Kevin Ochoa - Portafolio</title>
-    </head>
-    <body>
-
-        <!--=============== HEADER ===============-->
-        <header class="profile container">
-            <!-- Theme button -->
-            <i class="ri-english-input change-idiom" id="idiom-button"></i>
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-            <div id="notification" class="notification hideon">
+        <!-- Notification -->
+        <div id="notification" class="notification hideon">
             <p>Now you are seeing the english version</p>
-            </div>
-            <div id="notification" class="s-notification hideon">
+        </div>
+
+        <div id="notification" class="s-notification hideon">
             <p>Ahora estás viendo la versión en español</p>
+        </div>
+
+        <!-- My profile -->
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfil">
+                        <img src="assets/img/perfil.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- Personal information -->
+                <h2 class="profile__name">Kevin Ochoa Guerrero</h2>
+                <h3 class="profile__profession" id="2">Estudiante de Ingeniería en Sistemas de Información</h3>
+                <h3 class="profile__email" id="email">kevinochoa.dev@gmail.com</h3>
+               
+                <!-- Links -->
+                <ul class="profile__social">
+                    <a href="https://www.instagram.com/kevinochoa.dev/" target="_blank" class="profile__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/kevinochoaguerrero/" target="_blank"
+                        class="profile__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/Kevstrosky" target="_blank" class="profile__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                </ul>
             </div>
-            
-            <div class="profile__container grid">
-                <div class="profile__data">
-                    <div class="profile__border">
-                        <div class="profile__perfil">
-                            <!-- Insert your image, according to the example size of the portfolio -->
-                            <img src="assets/img/perfil.jpg" alt="">
+
+            <!-- My resume -->
+            <div class="profile__buttons">
+                <a download="" href="assets/pdf/Kevin_Ochoa_CV.pdf" class="button" id="3">
+                    Descargar CV (versión en español)<i class="ri-download-line"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <section class="filters container">
+            <!--=============== FILTERS TABS ===============-->
+            <ul class="filters__content">
+                <button class="filters__button filter-tab-active" data-target="#projects" id="4">
+                    Proyectos
+                </button>
+                <button class="filters__button" data-target="#skills" id="5">
+                    Tecnologías
+                </button>
+                <button class="filters__button" data-target="#experience" id="6">
+                    Experiencia
+                </button>
+                <button class="filters__button" data-target="#certifications" id="7">
+                    Certificaciones
+                </button>
+
+
+            </ul>
+
+            <div class="filters__sections">
+
+                <!--=============== PROJECTS ===============-->
+                <div class="projects__content grid filters__active" data-content id="projects">
+                    <article class="projects__card">
+                        <img src="assets/img/project1.jpg" alt="" class="projects__img">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle" id="8">Sitio web</span>
+                                <h3 class="projects__title">Nortec Seguridad</h3>
+                                <span class="projects__subtitle" id="9">Sitio web corporativo desarrollado para la
+                                    empresa Nortec Seguridad.</span>
+                                <br>
+                                <br>
+                                <a href="https://www.nortec.com.mx/" class="projects__button button button__small"
+                                    target="_blank">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="projects__card">
+                        <img src="assets/img/project2.jpg" alt="" class="projects__img" id="sislab">
+
+                        <div class="projects__modal">
+                            <div>
+                                <span class="projects__subtitle" id="10">Aplicación web</span>
+                                <h3 class="projects__title" id="11">Sislab | En desarrollo</h3>
+                                <span class="projects__subtitle" id="12">Sistema para solicitud de laboratorios de la
+                                    Universidad de Sonora.</span>
+                                <br>
+                                <br>
+                                <a href="https://sislab-frontend.vercel.app/login"
+                                    class="projects__button button button__small" target="_blank">
+                                    <i class="ri-link"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+
+
+
+                <!--=============== SKILLS ===============-->
+                <div class="skills__content grid" data-content id="skills">
+                    <div class="skills__area">
+                        <h3 class="skills__title" id="13">Desarrollo frontend</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__level" id="14">Avanzado</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">Javascript</h3>
+                                        <span class="skills__level" id="15">Intermedio</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">Three.js</h3>
+                                        <span class="skills__level" id="16">Primeros pasos</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">jQuery</h3>
+                                        <span class="skills__level" id="17">Primeros pasos</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level" id="18">Intermedio</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+
+
+
+                                    <div>
+                                        <h3 class="skills__name">React.js</h3>
+                                        <span class="skills__level" id="19">Intermedio</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+
+
+
+                                    <div>
+                                        <h3 class="skills__name">Material UI</h3>
+                                        <span class="skills__level" id="20">Principiante</span>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
 
-                    <h2 class="profile__name">Kevin Ochoa Guerrero</h2>
-                    <h3 class="profile__profession" id="2">Estudiante de Ingeniería en Sistemas de Información</h3>
-                    <h3 class="profile__email" id="email">kevinochoa.dev@gmail.com</h3>
+                    <div class="skills__area">
+                        <h3 class="skills__title" id="21">Desarrollo backend</h3>
 
-                    <ul class="profile__social">
-                        <a href="https://www.instagram.com/kevinochoa.dev/" target="_blank" class="profile__social-link">
-                            <i class="ri-instagram-line"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/kevinochoaguerrero/" target="_blank" class="profile__social-link">
-                            <i class="ri-linkedin-box-line"></i>
-                        </a>
-                        <a href="https://github.com/Kevstrosky" target="_blank" class="profile__social-link">
-                            <i class="ri-github-line"></i>
-                        </a>
-                    </ul>
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">Java</h3>
+                                        <span class="skills__level" id="22">Intermedio</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">ASP.NET Razor</h3>
+                                        <span class="skills__level" id="23">Primeros pasos</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">MySQL</h3>
+                                        <span class="skills__level" id="24">Intermedio</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">C#</h3>
+                                        <span class="skills__level" id="25">Principiante</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">MongoDB</h3>
+                                        <span class="skills__level" id="26">Principiante</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__area">
+                        <h3 class="skills__title" id="27">Herramientas</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+
+                                    <div>
+                                        <h3 class="skills__name">Figma</h3>
+                                        <span class="skills__level" id="28">Intermedio</span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">Github</h3>
+                                        <span class="skills__level" id="29">Intermedio</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">Confluence</h3>
+                                        <span class="skills__level" id="30">Avanzado</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">Adobe Photoshop</h3>
+                                        <span class="skills__level" id="31">Intermedio</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">Gitlab</h3>
+                                        <span class="skills__level" id="32">Principiante</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__area">
+                        <h3 class="skills__title" id="33">QA del software</h3>
+
+                        <div class="skills__box">
+                            <div class="skills__group">
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">Cypress.js</h3>
+                                        <span class="skills__level" id="34">Principiante</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="skills__group">
+                                <div class="skills__data">
+
+
+                                    <div>
+                                        <h3 class="skills__name">Pruebas unitarias</h3>
+                                        <span class="skills__level" id="35">Principiante</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+                <!--=============== EXPERIENCE ===============-->
+                <div class="experience__content" data-content id="experience">
+                    <article class="experience__card">
+                        <!--=============== JOB 1 ===============-->
+                        <h3 id="36">Desarrollador de software</h3>
+                        <a href="https://www.instagram.com/csipro.dev/"><span class="skills__level" id="37"
+                                style="font-weight: 600; font-size: 0.9rem">CSI PRO | Universidad de Sonora</span></a>
+                        <br>
+                        <span class="skills__level" id="38" style="font-size: 0.8rem">Marzo 2022 - Actualidad</span>
+                        <br>
+                        <br>
+                        <span class="skills__level" id="39" style="font-size: 0.8rem">Actualmente soy líder y
+                            desarrollador del proyecto "Digitalización y automatización de formularios para los
+                            procedimientos internos de los laboratorios" del departamento de Ciencias Químico Biológicas
+                            de la Universidad de Sonora.</span>
+                        <br>
+                        <br>
+                        <span class="skills__level" id="40" style="font-size: 0.8rem">Una aplicación web que permite a
+                            los maestros realizar solicitudes de laboratorios, reactivos y equipos para las prácticas
+                            que realizan los alumnos.
+
+                            <br>
+                            <br>
+                            Tecnologías:
+                            <br>
+                            • HTML5, CSS3, Javascript, Mongodb, Express.js, React.js, Node.js
+                            <br>
+                            <br>
+                            Documentación de proyecto y QA del Software.
+                            <br>
+                            • Confluence, Jira, Gitlab, Figma y pruebas unitarias.
+                        </span>
+                        <br>
+                        <br>
+                        <br>
+                        <!--=============== JOB 2 ===============-->
+                        <h3 id="41">Técnico de TI</h3>
+                        <a href="https://www.dri.com.mx/"><span class="skills__level"
+                                style="font-weight: 600; font-size: 0.9rem">DRi Cómputo</span></a>
+                        <br>
+                        <span class="skills__level" id="42" style="font-size: 0.8rem">Junio 2021 - Actualidad</span>
+                        <br>
+                        <br>
+                        <span class="skills__level" id="43" style="font-size: 0.8rem">Presto servicios y asesorías sobre
+                            tecnologías de información para empresas y particulares. Además de vender y ofrecer
+                            soluciones con el uso de tecnología.
+                            <br>
+                            <br>
+                            Reparación y mantenimiento de:
+                            <br>
+                            • Computadoras de escritorio, computadoras portátiles, impresoras de inyección de tinta y
+                            láser.
+                            <br>
+                            <br>
+                            Configuración e instalación de:
+                            <br>
+                            • Servidores, antenas, checadores y telefonía.
+                            <br>
+                            <br>
+                            Otras funciones:
+                            <br>
+                            • Brindar asesorías y capacitaciones.
+                            <br>
+                            • Armar computadores de escritorio
+
+                        </span>
+                        <br>
+                        <br>
+                        <br>
+                        <!--=============== JOB 3 ===============-->
+                        <h3 id="44">Técnico de redes</h3>
+                        <a href="https://www.nortec.com.mx/"><span class="skills__level"
+                                style="font-weight: 600; font-size: 0.9rem">Nortec Seguridad</span></a>
+                        <br>
+                        <span class="skills__level" id="45" style="font-size: 0.8rem">Enero 2020 - Enero 2021</span>
+                        <br>
+                        <br>
+                        <span class="skills__level" id="46" style="font-size: 0.8rem">
+                            Me desarrollé dentro de la empresa como técnico en seguridad electrónica y
+                            telecomunicaciones brindando servicios a grandes empresas como Caffenio, Leoni, Construplan,
+                            entre otras.
+                            <br>
+                            <br>
+                            También estuve a cargo del área de marketing, realizando planes de mailing, desarrollo web
+                            del sitio web de la empresa y siendo community manager.
+                            <br>
+                            <br>
+                            Implementación y configuración de:
+                            <br>
+                            • Sistemas de videovigilancia IP/Análogos, control de acceso, checadores y antenas.
+                            <br>
+                            • Cableado estructurado, organización de rack, canalización y desarrollo de cuartos de
+                            telecomunicaciones.
+                            <br>
+                            • Asignamientos de IP a dispositivos.
+                            <br>
+                            <br>
+                            Documentación y capaciones:
+                            <br>
+                            • Documentación del trabajo de ingeniería.
+                            <br>
+                            • Capacitaciones y asesorías a usuarios finales.
+                            <br>
+                            <br>
+                            Marketing y desarrollo web.
+                            <br>
+                            • Desarrolllo e implementación de la página web corporativa con Wix.
+                            <br>
+                            • Fotografía y edición del portafolio de trabajo.
+                            <br>
+                            • Mailling
+                            <br>
+                            • Diseño de elementos gráficos
+                            <br>
+                            • Community manager
+                            <br>
+                            • Campañas de publicidad
+                            <br>
+                        </span>
+                        <br>
+                        <br>
+                        <br>
 
 
-                <div class="profile__buttons">
-                    <!-- Insert your CV -->
-                    <a download="" href="assets/pdf/Kevin_Ochoa_CV.pdf" class="button" id="3">
-                        Descargar CV (versión en español)<i class="ri-download-line"></i>
-                    </a>
+                    </article>
                 </div>
-            </div>
-        </header>
+                <!--=============== CERTIFICATIONS ===============-->
+                <div class="certifications__content" data-content id="certifications">
 
+                    <div class="wrapper">
+                        <input type="radio" name="slider" id="certifications_tab" checked>
+                        <input type="radio" name="slider" id="courses_tab">
 
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
-                <ul class="filters__content">
-                    <button class="filters__button filter-tab-active" data-target="#projects" id="4">
-                        Proyectos
-                    </button>
-                    <button class="filters__button" data-target="#skills" id="5">
-                        Tecnologías
-                    </button>
-                    <button class="filters__button" data-target="#experience" id="6">
-                        Experiencia
-                    </button>
-                    <button class="filters__button" data-target="#certifications" id="7">
-                        Certificaciones
-                    </button>
-                   
+                        <nav>
+                            <label for="certifications_tab" class="certifications_tab" id="47">Certificaciones</label>
+                            <label for="courses_tab" class="courses_tab" id="48">Cursos</label>
+                            <div class="slider"></div>
+                        </nav>
+                        <section>
+                            <div class="content content-1">
+                                <div class="certification-1">
+                                    <h2 id=49>Introducción al Desarrollo Web I (40h) - Google Actívate</h2>
+                                    <img src="assets/img/certificados/Introducción al Desarrollo Web I (40h).jpg"></img>
+                                </div>
+                                <div class="certification-id">
+                                    <h3 id="cert-id" onclick="copy('cert-id')">Certification ID: 9RB UWV RJY<i
+                                            class="ri-clipboard-fill"></i></h3>
+                                </div>
+                                <div class="certification-1-button">
+                                    <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code"
+                                        target="_blank" id="50">
+                                        Verificar certificado <i class="ri-link-m"></i>
+                                    </a>
+                                </div>
+                                <div class="certification-2">
+                                    <h2 id="51">Introducción al Desarrollo Web II (40h) - Google Actívate</h2>
+                                    <img
+                                        src="assets/img/certificados/Introducción al Desarrollo Web II (40h).jpg"></img>
+                                </div>
+                                <div class="certification-id">
+                                    <h3 id="cert-id-2" onclick="copy('cert-id-2')">Certification ID: 7J9 9HP FWM<i
+                                            class="ri-clipboard-fill"></i></h3>
+                                </div>
+                                <div class="certification-1-button">
+                                    <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code"
+                                        target="_blank" id="52">
+                                        Verificar certificado <i class="ri-link-m"></i>
+                                    </a>
+                                </div>
 
-                </ul>
+                            </div>
+                            <div class="content content-2">
+                                <div class="certification-1">
+                                    <h2 id="53">Introducción al desarrollo web con HTML, CSS, JavaScript - IBM</h2>
+                                    <img src="assets/img/cursos/ibm-2.jpg"></img>
+                                </div>
 
-                <div class="filters__sections">
+                                <div class="certification-1-button">
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/HUCB5TY6G8Q8"
+                                        target="_blank" id="54">
+                                        Verificar certificado <i class="ri-link-m"></i>
+                                    </a>
+                                </div>
+                                <div class="certification-1">
+                                    <h2 id="55">Aspectos básicos de la asistencia técnica - Google</h2>
+                                    <img src="assets/img/cursos/google-1.jpg"></img>
+                                </div>
 
-                    <!--=============== PROJECTS ===============-->
-                    <div class="projects__content grid filters__active" data-content id="projects">
-                        <article class="projects__card">
-                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
-                            <img src="assets/img/project1.jpg" alt="" class="projects__img">
-
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle" id="34">Página web</span>
-                                    <h3 class="projects__title">Nortec Seguridad</h3>
-                                    <a href="https://www.nortec.com.mx/" class="projects__button button button__small" target="_blank">
-                                        <i class="ri-link"></i>
+                                <div class="certification-1-button">
+                                    <a href="https://www.coursera.org/account/accomplishments/verify/BZPLBPGTP4VG"
+                                        target="_blank" id="56">
+                                        Verificar certificado <i class="ri-link-m"></i>
                                     </a>
                                 </div>
                             </div>
-                        </article>
 
-                        <article class="projects__card">
-                            <img src="assets/img/project2.jpg" alt="" class="projects__img" id="sislab">
 
-                            <div class="projects__modal">
-                                <div>
-                                    <span class="projects__subtitle" id="35">Aplicación web</span>
-                                    <h3 class="projects__title" id="36">Sislab - en desarrollo</h3>
-                                    <span class="projects__subtitle" id="22">Una aplicación web que permite a los maestros realizar solicitudes de laboratorios, reactivos y equipos para las prácticas que realizan los alumnos de la Universidad de Sonora.</span>    
-                                </div>
-                            </div>
-                        </article>
-
+                        </section>
                     </div>
-
-                    
-                    
-
-                    <!--=============== SKILLS ===============-->
-                    <div class="skills__content grid" data-content id="skills">
-                        <div class="skills__area">
-                            <h3 class="skills__title" id="8">Desarrollo frontend</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        
-                                        <i class="ri-checkbox-circle-line"></i>        
-                                        <div>
-                                            <h3 class="skills__name">HTML</h3>
-                                            <span class="skills__level" id="10">Intermediario</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-
-                                        <i class="ri-checkbox-circle-line"></i>        
-                                        <div>
-                                            <h3 class="skills__name">Javascript</h3>
-                                            <span class="skills__level" id="11">Principiante</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Tailwindcss</h3>
-                                            <span class="skills__level" id="12">Primeros pasos</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>        
-                                        <div>
-                                            <h3 class="skills__name">CSS</h3>
-                                            <span class="skills__level" id="13">Intermediario</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-
-                                        <i class="ri-checkbox-circle-line"></i>        
-        
-                                        <div>
-                                            <h3 class="skills__name">Bootstrap</h3>
-                                            <span class="skills__level" id="14">Primeros pasos</span>
-                                        </div>
-                                    </div>
-        
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="skills__area">
-                            <h3 class="skills__title" id="9">Desarrollo backend</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">MySQL</h3>
-                                            <span class="skills__level" id="15">Intermediario</span>
-                                        </div>
-                                    </div>
-                
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>        
-        
-                                        <div>
-                                            <h3 class="skills__name">C#</h3>
-                                            <span class="skills__level" id="16">Principiante</span>
-                                        </div>
-                                    </div>
-        
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skills__area">
-                            <h3 class="skills__title" id="30">Herramientas</h3>
-    
-                            <div class="skills__box">
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>        
-                                        <div>
-                                            <h3 class="skills__name">Figma</h3>
-                                            <span class="skills__level" id="31">Principiante</span>
-                                        </div>
-                                    </div>
-        
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>        
-        
-                                        <div>
-                                            <h3 class="skills__name">Github</h3>
-                                            <span class="skills__level" id="33">Principiante</span>
-                                        </div>
-                                    </div>
-        
-                                    
-                                </div>
-                                
-                                <div class="skills__group">
-                                    <div class="skills__data">
-                                        <i class="ri-checkbox-circle-line"></i>
-        
-                                        <div>
-                                            <h3 class="skills__name">Adobe Photoshop</h3>
-                                            <span class="skills__level" id="32">Intermediario</span>
-                                        </div>
-                                    </div>
-        
-        
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                                             <!--=============== EXPERIENCE ===============-->
-                                             <div class="experience__content" data-content id="experience">
-                                                <article class="experience__card">
-                                                <!--=============== JOB 1 ===============-->
-                                                    <h3 id="18">Líder de proyecto</h3>
-                                                    <span class="skills__level" id="19" style="font-weight: 600; font-size: 0.9rem">Universidad de Sonora</span>
-                                                    <br>
-                                                    <span class="skills__level" id="20" style="font-size: 0.8rem">Marzo 2022 - Actualidad</span>
-                                                    <br>
-                                                    <br>
-                                                    <span class="skills__level" id="21" style="font-size: 0.8rem">Actualmente soy líder del proyecto "Digitalización y automatización de
-                                                        formularios para los procedimientos internos de los laboratorios" del departamento de Ciencias Químico Biológicas.</span>
-                                                    <br>
-                                                    <br>
-                                                    <span class="skills__level" id="45" style="font-size: 0.8rem">Una aplicación web que permite a los maestros realizar solicitudes 
-                                                        de laboratorios, reactivos y equipos para las prácticas que realizan los alumnos.</span>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                <!--=============== JOB 2 ===============-->
-                                                    <h3 id="23">Técnico de TI</h3>
-                                                    <span class="skills__level" style="font-weight: 600; font-size: 0.9rem">DRi Cómputo</span>
-                                                    <br>
-                                                    <span class="skills__level" id="24" style="font-size: 0.8rem">Junio 2021 - Actualidad</span>
-                                                    <br>
-                                                    <br>
-                                                    <span class="skills__level" id="25" style="font-size: 0.8rem">Presto servicios y asesorías de tecnologías de información para empresas y particulares. Tales como reparación de equipos de cómputo como computadoras de escritorio, laptops e impresoras. También en la instalación de checadores, servidores, antenas y telefonía. Brindo asesorías y capacitaciones. Construyo computadoras de escritorio, desde la búsqueda entre compatibilidad de los componentes hasta tener listo el equipo.
-                                                    </span>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                 <!--=============== JOB 3 ===============-->
-                                                    <h3 id="26">Técnico en redes</h3>
-                                                    <span class="skills__level" style="font-weight: 600; font-size: 0.9rem">Nortec Seguridad</span>
-                                                    <br>
-                                                    <span class="skills__level" id="27" style="font-size: 0.8rem">Enero 2020 - Enero 2021</span>
-                                                    <br>
-                                                    <br>
-                                                    <span class="skills__level" id="28" style="font-size: 0.8rem">Me desarrollé dentro de la empresa como técnico en seguridad electrónica y telecomunicaciones. La actividad principal que realizaba, era implementar, configurar y documentar la instalación de dispositivos electrónicos para empresas del sector industrial y comercial. Dispositivos tales como cámaras de videovigilancia, antenas y controles de acceso.</span>
-                                                    <br>
-                                                    <br>
-                                                    <span class="skills__level" id="29" style="font-size: 0.8rem">También estuve en el desarrollo de diversos cuartos de telecomunicaciones para
-                                                         empresas realizando labores como el mantenimiento y cableado estructurado de estos.</span>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-
-                        
-                                                </article>
-                                            </div>
-                                            <!--=============== CERTIFICATIONS ===============-->
-                                            <div class="certifications__content" data-content id="certifications">
-                                                
-                                                <div class="wrapper">
-                                                    <input type="radio" name="slider" id="certifications_tab" checked>
-                                                    <input type="radio" name="slider" id="courses_tab">
-
-                                                    <nav>
-                                                        <label for="certifications_tab" class="certifications_tab" id="37">Certificaciones</label>
-                                                        <label for="courses_tab" class="courses_tab" id="38">Cursos</label>
-                                                        <div class="slider"></div>
-                                                    </nav> 
-                                                    <section>
-                                                        <div class="content content-1">
-                                                            <div class="certification-1">
-                                                                <h2 id = 39>Introducción al Desarrollo Web I (40h) - Google Actívate</h2>
-                                                                <img src="assets/img/certificados/Introducción al Desarrollo Web I (40h).jpg"></img>
-                                                            </div>
-                                                            <div class="certification-id">
-                                                                <h3 id="cert-id" onclick="copy('cert-id')">Certification ID: 9RB UWV RJY<i class="ri-clipboard-fill"></i></h3>
-                                                            </div>
-                                                            <div class="certification-1-button">
-                                                                <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code" target="_blank" id="40">
-                                                                    Verificar certificado <i class="ri-link-m"></i>
-                                                                </a>
-                                                            </div>
-                                                            <div class="certification-2">
-                                                                <h2 id="44">Introducción al Desarrollo Web II (40h) - Google Actívate</h2>
-                                                                <img src="assets/img/certificados/Introducción al Desarrollo Web II (40h).jpg"></img>
-                                                            </div>
-                                                            <div class="certification-id">
-                                                                <h3 id="cert-id-2" onclick="copy('cert-id-2')">Certification ID: 7J9 9HP FWM<i class="ri-clipboard-fill"></i></h3>
-                                                            </div>
-                                                            <div class="certification-1-button">
-                                                                <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code" target="_blank" id="41">
-                                                                    Verificar certificado <i class="ri-link-m"></i>
-                                                                </a>
-                                                            </div>
-                                                            
-                                                        </div>
-                                                        <div class="content content-2">
-                                                            <div class="certification-1">
-                                                               <h2 id="42">Introducción al desarrollo web con HTML, CSS, JavaScript - IBM</h2>
-                                                             <img src="assets/img/cursos/ibm-2.jpg"></img>
-                                                          </div>
-                                                   
-                                                        <div class="certification-1-button">
-                                                            <a href="https://www.coursera.org/account/accomplishments/verify/HUCB5TY6G8Q8" target="_blank" id="43">
-                                                                Verificar certificado <i class="ri-link-m"></i>
-                                                            </a>
-                                                        </div>
-                                                        <div class="certification-1">
-                                                            <h2 id="46">Aspectos básicos de la asistencia técnica - Google</h2>
-                                                          <img src="assets/img/cursos/google-1.jpg"></img>
-                                                       </div>
-                                                
-                                                     <div class="certification-1-button">
-                                                         <a href="https://www.coursera.org/account/accomplishments/verify/BZPLBPGTP4VG" target="_blank" id="47">
-                                                             Verificar certificado <i class="ri-link-m"></i>
-                                                         </a>
-                                                     </div>
-                                                        </div>
-                                                        
-                                                        
-                                                    </section>
-                                                </div>
-                                            </div>
-                                            
-                        
                 </div>
-            </section>
-        </main>
 
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            <span class="footer__copy" id="17">
-                &#169; Sitio basado en el diseño original de Bedimcode. Editado y modificado por Kevstrosky.
-            </span>
-        </footer>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="assets/js/scrollreveal.min.js"></script>
+            </div>
+        </section>
+    </main>
 
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+        <span class="footer__copy" id="57">
+            &#169; Sitio basado en el diseño original de Bedimcode. Editado y modificado por Kevstrosky. Actualizado el
+            26 de Febrero del 2023.
+        </span>
+
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
