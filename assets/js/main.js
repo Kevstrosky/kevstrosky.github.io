@@ -76,7 +76,7 @@ const idiomButton = document.getElementById('idiom-button');
 
 const english_information = {
     1: "Kevin Ochoa - Portfolio",
-    2: "Information Systems Engineering Student",
+    2: "Jr. Software Engineer",
     3: "Download CV (english version) <i class="+"ri-download-line"+"></i>", 
     4: "Projects",
     5: "Skills",
@@ -133,19 +133,11 @@ const english_information = {
     56: "Verify certificate"+'<i class="ri-link-m"></i>',
     57: " &#169; Site based on Bedimcode's original design. Edited and modified by Kevstrosky. Updated on February 26, 2023."
 
-
-
-    
-
-
-
-
-
 }
 
 const spanish_information = {
     1: "Kevin Ochoa - Portafolio",
-    2: "Estudiante de Ingeniería en Sistemas de Información",
+    2: "Ingeniero de Software Junior",
     3: "Descargar CV (versión en español) <i class="+"ri-download-line"+"></i>", 
     4: "Proyectos",
     5: "Tecnologías",
@@ -202,15 +194,9 @@ const spanish_information = {
     56: "Verificar certificado"+'<i class="ri-link-m"></i>',
     57: "&#169; Sitio basado en el diseño original de Bedimcode. Editado y modificado por Kevstrosky. Actualizado el 26 de Febrero del 2023."
 
-
-
-
-
-   
-
-
-    
 }
+
+
 function copy(idcert) {
     let certText = document.getElementById(idcert).innerText;
     let arr = certText.split(" ");
