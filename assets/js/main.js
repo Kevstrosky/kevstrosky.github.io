@@ -116,7 +116,7 @@ const english_information = {
     39: "I am currently the leader and developer of the project "+'"Digitalization and automation of forms for internal laboratory procedures" '+ "of the Department of Biological Chemical Sciences at the University of Sonora.",
     40: "A web application that allows teachers to make requests for laboratories, reagents and equipment for the practices carried out by students.<br><br>Technologies:<br>• HTML5, CSS3, Javascript, Mongodb, Express.js, React.js, Node.js<br><br>Project documentation and Sofware QA.<br>• Confluence, Jira, Gitlab, Figma and Unit testing.",
     41: "IT Specialist",
-    42: "June 2021 - Present",
+    42: "June 2021 - March 2023",
     43: "I provide services and consultancies on information technology for companies and individuals. In addition to selling and offering solutions with the use of technology.<br><br> Repair and maintenance of:<br> • Desktop computers, laptops, inkjet and laser printers. <br> <br> Configuration and installation of: <br> • Servers, antennas, time attendance devices and telephony<br><br>Other functions:<br>• Provide advice and training.<br>• Assemble desktop computers",
     44: "Network Technician",
     45: "January 2020 - January 2021",
@@ -131,7 +131,7 @@ const english_information = {
     54: "Verify certificate"+'<i class="ri-link-m"></i>',
     55: "Technical Support Fundamentals - Google",
     56: "Verify certificate"+'<i class="ri-link-m"></i>',
-    57: " &#169; Site based on Bedimcode's original design. Edited and modified by Kevstrosky. Updated on February 26, 2023."
+    57: " &#169; Site based on Bedimcode's original design. Edited and modified by Kevstrosky. Updated on March 20, 2023."
 
 }
 
@@ -177,7 +177,7 @@ const spanish_information = {
     39: "Actualmente soy líder y desarrollador del proyecto "+'"Digitalización y automatización de formularios para los procedimientos internos de los laboratorios "'+ "del departamento de Ciencias Químico Biológicasde la Universidad de Sonora.",
     40: "Una aplicación web que permite a los maestros realizar solicitudes de laboratorios, reactivos y equipos para las prácticas que realizan los alumnos.<br><br>Tecnologías:<br>• HTML5, CSS3, Javascript, Mongodb, Express.js, React.js, Node.js<br><br>Documentación de proyecto y QA del Software.<br>• Confluence, Jira, Gitlab, Figma y pruebas unitarias.",
     41: "Técnico de TI",
-    42: "Junio 2021 - Actualidad",
+    42: "Junio 2021 - Marzo 2023",
     43: "Presto servicios y asesorías sobre tecnologías de información para empresas y particulares. Además de vender y ofrecer soluciones con el uso de tecnología. <br><br> Reparación y mantenimiento de: <br> • Computadoras de escritorio, computadoras portátiles, impresoras de inyección de tinta y láser. <br> <br> Configuración e instalación de: <br> • Servidores, antenas, checadores y telefonía.<br><br>Otras funciones:<br>• Brindar asesorías y capacitaciones.<br>• Armar computadores de escritorio",
     44: "Técnico de redes",
     45: "Enero 2020 - Enero 2021",
@@ -192,7 +192,7 @@ const spanish_information = {
     54: "Verificar certificado"+'<i class="ri-link-m"></i>',
     55: "Aspectos básicos de la asistencia técnica - Google",
     56: "Verificar certificado"+'<i class="ri-link-m"></i>',
-    57: "&#169; Sitio basado en el diseño original de Bedimcode. Editado y modificado por Kevstrosky. Actualizado el 26 de Febrero del 2023."
+    57: "&#169; Sitio basado en el diseño original de Bedimcode. Editado y modificado por Kevstrosky. Actualizado el 20 de marzo del 2023."
 
 }
 
