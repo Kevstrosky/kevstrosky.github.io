@@ -114,7 +114,7 @@ const english_information = {
     37: "CSI PRO | University of Sonora",
     38: "March 2022 - Present",
     39: "I am currently the leader and developer of the project "+'"Digitalization and automation of forms for internal laboratory procedures" '+ "of the Department of Biological Chemical Sciences at the University of Sonora.",
-    40: "A web application that allows teachers to make requests for laboratories, reagents and equipment for the practices carried out by students.<br><br>Technologies:<br>• HTML5, CSS3, Javascript, Mongodb, Express.js, React.js, Node.js<br><br>Project documentation and Sofware QA.<br>• Confluence, Jira, Gitlab, Figma and Unit testing.",
+    40: "A web application that allows teachers to make requests for laboratories, reagents and equipment for the practices carried out by students.<br><br>Technologies:<br>• HTML5, CSS3, Javascript, Mongodb, Express.js, React.js and Node.js<br><br>Project documentation and Sofware QA.<br>• Confluence, Jira, Gitlab, Figma and Unit testing.",
     41: "IT Specialist",
     42: "June 2021 - March 2023",
     43: "I provide services and consultancies on information technology for companies and individuals. In addition to selling and offering solutions with the use of technology.<br><br> Repair and maintenance of:<br> • Desktop computers, laptops, inkjet and laser printers. <br> <br> Configuration and installation of: <br> • Servers, antennas, time attendance devices and telephony<br><br>Other functions:<br>• Provide advice and training.<br>• Assemble desktop computers",
@@ -131,7 +131,15 @@ const english_information = {
     54: "Verify certificate"+'<i class="ri-link-m"></i>',
     55: "Technical Support Fundamentals - Google",
     56: "Verify certificate"+'<i class="ri-link-m"></i>',
-    57: " &#169; Site based on Bedimcode's original design. Edited and modified by Kevstrosky. Updated on March 20, 2023."
+    57: " &#169; Site based on Bedimcode's original design. Edited and modified by Kevstrosky. Updated on March 20, 2023.",
+    58: "Software engineer",
+    59: "Hospital San Diego de Alcalá",
+    60: "May 2023 - Present",
+    61: "I am currently in the Software Engineering team developing the project "+'"Electronic Health Records"'+" for the internal processes of the hospital in the position of Front End developer. I am involved in the collection and analysis of requirements as well as software architecture modeling. <br> <br> Technologies: <br> • HTML5, CSS3, React + Vite and Typescript <br> <br> Project documentation: <br> • Figma y Github <br> <br>",
+    62: "Jr software engineer",
+    63: "Tepache labs",
+    64: "March 2023 - May 2023",
+    65: "During my internship I developed the Culto al Perro Café website on the Front End side. I also developed an API that uploads videos to an Amazon Web Services bucket. <br> <br> Technologies: <br> • HTML5, CSS3, Typescript, React, Remix, Hydrogen + Oxygen de Shopify, Storybook, Styled Components, Eslint and Amazon Web Services. <br> <br>"
 
 }
 
@@ -175,7 +183,7 @@ const spanish_information = {
     37: "CSI PRO | Universidad de Sonora",
     38: "Marzo 2022 - Actualidad",
     39: "Actualmente soy líder y desarrollador del proyecto "+'"Digitalización y automatización de formularios para los procedimientos internos de los laboratorios "'+ "del departamento de Ciencias Químico Biológicasde la Universidad de Sonora.",
-    40: "Una aplicación web que permite a los maestros realizar solicitudes de laboratorios, reactivos y equipos para las prácticas que realizan los alumnos.<br><br>Tecnologías:<br>• HTML5, CSS3, Javascript, Mongodb, Express.js, React.js, Node.js<br><br>Documentación de proyecto y QA del Software.<br>• Confluence, Jira, Gitlab, Figma y pruebas unitarias.",
+    40: "Una aplicación web que permite a los maestros realizar solicitudes de laboratorios, reactivos y equipos para las prácticas que realizan los alumnos.<br><br>Tecnologías:<br>• HTML5, CSS3, Javascript, Mongodb, Express.js, React.js y Node.js<br><br>Documentación de proyecto y QA del Software.<br>• Confluence, Jira, Gitlab, Figma y pruebas unitarias.",
     41: "Técnico de TI",
     42: "Junio 2021 - Marzo 2023",
     43: "Presto servicios y asesorías sobre tecnologías de información para empresas y particulares. Además de vender y ofrecer soluciones con el uso de tecnología. <br><br> Reparación y mantenimiento de: <br> • Computadoras de escritorio, computadoras portátiles, impresoras de inyección de tinta y láser. <br> <br> Configuración e instalación de: <br> • Servidores, antenas, checadores y telefonía.<br><br>Otras funciones:<br>• Brindar asesorías y capacitaciones.<br>• Armar computadores de escritorio",
@@ -192,8 +200,15 @@ const spanish_information = {
     54: "Verificar certificado"+'<i class="ri-link-m"></i>',
     55: "Aspectos básicos de la asistencia técnica - Google",
     56: "Verificar certificado"+'<i class="ri-link-m"></i>',
-    57: "&#169; Sitio basado en el diseño original de Bedimcode. Editado y modificado por Kevstrosky. Actualizado el 20 de marzo del 2023."
-
+    57: "&#169; Sitio basado en el diseño original de Bedimcode. Editado y modificado por Kevstrosky. Actualizado el 20 de marzo del 2023.",
+    58: "Ingeniero de software",
+    59: "Hospital San Diego de Alcalá",
+    60: "Mayo 2023 - Actualidad",
+    61: "Actualmente estoy en el equipo de Ingeniería de Software desarrollando el proyecto "+'Sistema Integral del Expediente Clínico Electrónico'+"+para los procesos internos del hospital en la posición de desarrollador Front End. Estoy involucrado en la recopilación y análisis de requerimientos además del modelado de la arquitectura del software. <br> <br> Tecnologías: <br> • HTML5, CSS3, React + Vite y Typescript <br> <br> Documentación del proyecto <br> • Figma y Github <br> <br>",
+    62: "Ingeniero de software jr",
+    63: "Tepache labs",
+    64: "Marzo 2023 - Mayo 2023",
+    65: "Desarrollé en mi estancia de prácticas el sitio web de Culto al Perro Café del lado del Front End. Además desarrollé una API que sube vídeos a un bucket de Amazon Web Services. <br> <br> Tecnologías: <br> • HTML5, CSS3, Typescript, React, Remix, Hydrogen + Oxygen de Shopify, Storybook, Styled Components, Eslint y Amazon Web Services. <br> <br>"
 }
 
 
