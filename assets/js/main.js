@@ -76,7 +76,7 @@ const idiomButton = document.getElementById('idiom-button');
 
 const english_information = {
     1: "Kevin Ochoa - Portfolio",
-    2: "Jr. Software Engineer",
+    2: "Software Engineer",
     3: "Download CV (english version) <i class="+"ri-download-line"+"></i>", 
     4: "Projects",
     5: "Skills",
@@ -145,7 +145,7 @@ const english_information = {
 
 const spanish_information = {
     1: "Kevin Ochoa - Portafolio",
-    2: "Ingeniero de Software Junior",
+    2: "Ingeniero de Software",
     3: "Descargar CV (versión en español) <i class="+"ri-download-line"+"></i>", 
     4: "Proyectos",
     5: "Tecnologías",
